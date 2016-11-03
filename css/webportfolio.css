@@ -1,0 +1,48 @@
+header {
+	background-color: green;
+	color:white;
+	height: 250px;
+	width: 95%;
+	padding: 10px;
+	margin: 10px;
+}
+
+h1 {
+	color:white;
+	font-style: serif;
+	font-weight: bolder;
+	font-size: 200%;
+	padding: 10px;
+}
+
+nav    { 
+    margin: 0;
+    padding: 0;
+    background-color: green;
+	display: inline;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover {
+    background-color: #111;
+}
+
+#aboutmephoto {
+	height: 90%
+	width: 100%;
+}
+
+footer{
+	background-color: green;
+	color:white;
+	font-style: times;
+	height: 200%
+	width: 100%;
+}
