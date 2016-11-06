@@ -4,54 +4,46 @@ style the page as you want it to appear. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Responsive Design Lab</title>
-      <link rel="stylesheet" type="text/css" href="yourStyle.css"/>
+<script type="text/javascript">
+	function changebackground(element)
+	{
+		document.getElementById("emptygal").innerHTML = "<img class='popup' src='"+element.src+"' alt='"+element.alt+"'/>";
+		document.getElementById("emptygal").append(element.alt);
+	}
+</script>
+<title>Project Gallery</title>
+     <link rel="stylesheet" type="text/css" href="css/webportfolio.css"/>
 <meta charset = "UTF-8">
 </head>
-<body>
+<body class="back">
   <header>
-	<h1> Web Design is Awesome!!!</h1>
 	<nav>
-		<a href="https://www.si.umich.edu/">UMSI</a>
-		<a href="http://www.umich.edu/">U of M</a>
+		<a href ="http://murisko.people.si.umich.edu/Web%20Portfolio/homepage.html" > Meghan Urisko</a>
+		<a href="http://murisko.people.si.umich.edu/Web%20Portfolio/aboutme.html">About</a>
+		<a class="selected" href="http://murisko.people.si.umich.edu/Web%20Portfolio/photogal.html">Project Gallery</a>
+		<a href="http://murisko.people.si.umich.edu/Web%20Portfolio/contact.html">Contact</a>
 	</nav>
   </header>
+  
+  <div class="box" id="emptygal">
+  </div>
 
+<div class="box">
+	<div class = "photogal">
 
+		<img class= "galimage" src="http://murisko.people.si.umich.edu/Web%20Portfolio/imggal/Scan.jpeg" alt="Design Space QOC Evaluation For Art Around the Block App" onmouseover="changebackground(this)">
 
-  <section id = "left">
-	<h2>Why I am taking this class</h2>
-	<ol>
-		<li>It is required</li>
-		<li>I already know it, easy A!</li>
-		<li>My mom wants a webpage </li>
-	</ol>
-  </section>
+		<img class="galimage" src="http://murisko.people.si.umich.edu/Web%20Portfolio/imggal/IMG_0764.JPG" alt="Design sketches / StoryBoard Samples for Art Around the Block" onmouseover="changebackground(this)" onclick="changebackground(this)">
 
+		<img class="galimage" src="http://murisko.people.si.umich.edu/Web%20Portfolio/imggal/map.png" alt="Map Interface Created for Art Art Around the Block app" onmouseover="changebackground(this)" onclick="changebackground(this)">
 
-  <section id = "center">
-	<h2>Why I am at University  of Michigan</h2>
-	<div class="myClass">
-		<h3> Ann Arbor</h3>
-		<p >There are many excellent reason to attend the <a href = "umich.edu">University of Michigan</a>.  The academics are top-notch, the students are exceptionally good-looking, and for about six weeks out of the year the weather is abolutely almost pleasant.</p>
+		<img class="galimage" src="http://murisko.people.si.umich.edu/Web%20Portfolio/imggal/ProposalforDIACommunityProgramsPartnership.jpg" alt="Funding Proposal for Art Around the Block" onmouseover="changebackground(this)" onclick="changebackground(this)">
 	</div>
-
-	<div>
-		<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzDojh5E0fzvTg4nWYs0JadpTwcS2S1KHOtnVQnlruNqmNvfIk" alt="Football">
-
-		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO8WIJ5ygVENopHPC5Op9z4ua-MoGD-LoUZuEd6vdL-EMro28CWw" alt="Solar Car">
-
-		<img src="http://www-personal.umich.edu/~jensenl/visuals/album/annarbor/IMG_1051.jpg" alt="campus">
-
-		<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzDojh5E0fzvTg4nWYs0JadpTwcS2S1KHOtnVQnlruNqmNvfIk" alt="Football">
-	</div>
-  </section>
-
+</div>
 
   <footer>
-  	<p>Sample code for Web Design Discussion section<br/> Code is created by Colleen</p>
+  	<p>Created by Meghan Urisko for UMSI 539 Web Portfolio Assignment 11/16<br/>
   </footer>
-<!-- DO NOT CHANGE ANY PART OF THIS CODE!!! -->
   
 </body>
 </html>

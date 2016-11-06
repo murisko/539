@@ -1,7 +1,14 @@
+body{
+
+	font-family: sans-serif,"helvetica", "arial";
+	height: 100%
+	width: 100%;
+}
+
 header {
 	background-color: green;
 	color:white;
-	height: 250px;
+	height: 150px;
 	width: 95%;
 	padding: 10px;
 	margin: 10px;
@@ -29,20 +36,130 @@ nav a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-nav a:hover {
+nav a:hover 
+{
     background-color: #111;
 }
 
-#aboutmephoto {
-	height: 90%
+.back{
+
+	background-image: url("http://murisko.people.si.umich.edu/Web%20Portfolio/imgweb/zebra-print-background.jpg");
+	overflow: hidden;
+	height: 100%;
 	width: 100%;
+}
+
+.box 
+{
+	background-color:white;
+	font-size: 400%;
+	text-align: center;
+	height: 100%;
+	width:90%;
+	padding: 20px;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+
+.formbox 
+{
+	background-color:white;
+	font-size: 80%;
+	text-align: left;
+	height: 70%;
+	width:70%;
+	padding: 20px;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+
+.selected
+{
+	border-bottom: 2px solid white;
+}
+
+
+#aboutmephoto
+{
+	display: block;
+	height: 30%;
+	width: 30%;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#aboutmetext
+{
+	font-size: 12px;
+	display: block;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: round;
+	float: left;
+}
+
+#aboutmetext h2 
+{
+	font-size: 20px;
+	font-weight: bold;
+	float: center;
+}
+
+#emptygal {
+	font-size: 14px;
+}
+
+#emptygal img
+{
+	width: 20%;
+	height: 20%;
+}
+
+.photogal img
+
+{	
+	display: inline-block;
+	margin: 8px;
+	padding:8px;
+	height: 10%;
+	width: 10%;
+}
+
+.popup
+{
+	display: block;
+	width: 25%;
+	height: 25%;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+#emptygal
+{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
 
 footer{
 	background-color: green;
 	color:white;
 	font-style: times;
-	height: 200%
-	width: 100%;
+	text-align: center;
+	height: 50px;
+	width: 95%;
+	bottom:0;
+}
+
+@media screen and (max-width: 600px )
+{.back 
+	{ background-image: none; 
+	}
+
+	footer
+	{
+		position: fixed;
+	}
 }
